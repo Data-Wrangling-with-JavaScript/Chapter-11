@@ -19,7 +19,7 @@ module.exports = {
                 else {
                     resolve(server); // Web server started ok.
                 }
-            });                        
+            });
         });
     }
 }
