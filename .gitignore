@@ -57,5 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+listing-6/output/
 listing-4/output/
 listing-5/output/

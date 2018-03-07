@@ -10,13 +10,13 @@ webServer.start()
             openDevTools: { mode: "detach" } // Open the dev tools for the web page so we can trouble shoot if necessary.
         }); 
 
+        const outputImagePath = "./output/nyc-temperatures.png";
+        console.log(">> " + outputImagePath);
         return nightmare.goto("http://localhost:3000") // Point the browser at the web server we just started.
-            .wait("svg") // Wait until the chart appears on screen. 
-            .screenshot("./output/nyc-temperatures.png") // Capture a screenshot to an image file.
+            .wait("svg") // Wait until the graphics for the chart appear on screen. 
+            .screenshot(outputImagePath) // Capture a screenshot to an image file.
             .end() // End the Nightmare session. Any queued operations are complated and the headless browser is terminated.
-            .then(() => {
-                return server.close(); // Stop the web server when we are done.
-            })
+            .then(() => server.close()); // Stop the web server when we are done.
     })
     .then(() => {
         console.log("All done :)");
