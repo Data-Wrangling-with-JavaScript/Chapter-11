@@ -5,13 +5,10 @@ const Nightmare = require('nightmare');
 
 webServer.start()
     .then(server => {
-        const nightmare = Nightmare({ // Create an Nightmare instance.
-            show: true, // Show the window, ultimately we don't need this but it's useful to see what's going on when we are just getting started.
-            openDevTools: { mode: "detach" } // Open the dev tools for the web page so we can trouble shoot if necessary.
-        }); 
-
         const outputImagePath = "./output/nyc-temperatures.png";
         console.log(">> " + outputImagePath);
+
+        const nightmare = Nightmare(); // Create an Nightmare instance.
         return nightmare.goto("http://localhost:3000") // Point the browser at the web server we just started.
             .wait("svg") // Wait until the chart appears on screen. 
             .screenshot(outputImagePath) // Capture a screenshot to an image file.

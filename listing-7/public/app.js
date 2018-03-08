@@ -6,11 +6,11 @@
 function renderChart (bindto, data, size) {
     var chart = c3.generate({
         bindto: bindto,
-        size: size, // Set the size of the chart. Not used in this example, but we'll make use of this later.
+        size: size,
         data: {
             json: data,
             keys: {
-                x: "Year", // Specify the CSV file column to use as the X axis.
+                x: "Year",
                 value: [
                     "AvgTemp"
                 ]
@@ -31,7 +31,9 @@ $(function () {
                 dynamicTyping: true
             };
             var parsed = Papa.parse(response, parseOptions);
-            renderChart("#chart", parsed.data);
+            renderChart("#chart1", parsed.data); // Render a chart to each page of the report.
+            renderChart("#chart2", parsed.data);
+            renderChart("#chart3", parsed.data);
         })
         .catch(function (err) {
             console.error(err);
