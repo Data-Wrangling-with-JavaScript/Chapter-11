@@ -24,14 +24,14 @@ function renderChart (bindto, data, size) {
 
 $(function () {
 
-    $.get("nyc-temperature.csv")
+    $.get("nyc-temperature.csv") // Get CSV data file from the web server.
         .then(function (response) {
             var parseOptions = {
                 header: true,
                 dynamicTyping: true
             };
-            var parsed = Papa.parse(response, parseOptions);
-            renderChart("#chart", parsed.data);
+            var parsed = Papa.parse(response, parseOptions); // Parse CSV data to JavaScript data.
+            renderChart("#chart", parsed.data); // Use C3 to render the chart.
         })
         .catch(function (err) {
             console.error(err);

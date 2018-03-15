@@ -12,7 +12,7 @@ webServer.start()
         return nightmare.goto("http://localhost:3000") // Point the browser at the web server we just started.
             .wait("svg") // Wait until the chart appears on screen. 
             .screenshot(outputImagePath) // Capture a screenshot to an image file.
-            .end() // End the Nightmare session. Any queued operations are complated and the headless browser is terminated.
+            .end() // End the Nightmare session. Any queued operations are completed and the headless browser is terminated.
             .then(() => server.close()); // Stop the web server when we are done.
     })
     .then(() => {

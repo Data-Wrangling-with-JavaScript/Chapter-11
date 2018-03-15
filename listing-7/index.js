@@ -6,9 +6,9 @@ const Nightmare = require('nightmare');
 //
 // Capture a multi-page report to a PDF file.
 //
-function captureReport (urlToCapture, captureElementSelector, outputImagePath) {
+function captureReport (urlToCapture, captureElementSelector, outputPdfFilePath) {
     console.log("<< " + urlToCapture);
-    console.log(">> " + outputImagePath);
+    console.log(">> " + outputPdfFilePath);
 
     const nightmare = Nightmare(); // Create an Nightmare instance.
     return nightmare.goto(urlToCapture) // Point the browser at the requested web page.
@@ -23,8 +23,6 @@ function captureReport (urlToCapture, captureElementSelector, outputImagePath) {
             };
         })
         .then(pageDetails => { // Retrieve details computed in the headless browser. We can now use these value in subsequent Node.js code.
-            const outputImagePath = "./output/nyc-temperature-report.pdf";
-            console.log(">> " + outputImagePath);
             const printOptions = {
                 marginsType: 0, // No margins. We want to be able to set our margins explicitly in CSS.
                 pageSize: { // The size of each page. These values match the specification for the A4 page size standard, but in landscape.
@@ -34,14 +32,15 @@ function captureReport (urlToCapture, captureElementSelector, outputImagePath) {
                 landscape: true,
             };
             return nightmare.viewport(pageDetails.documentArea.width, pageDetails.documentArea.height) // Set the viewport to cover the area of the chart.
-                .pdf(outputImagePath, printOptions) // Capture the entire web page to a PDF report.
+                .pdf(outputPdfFilePath, printOptions) // Capture the entire web page to a PDF report.
                 .end(); // End the Nightmare session. Any queued operations are complated and the headless browser is terminated.
         });
 };
+
 webServer.start()
     .then(server => {
         const urlToCapture = "http://localhost:3000";
-        const outputImagePath = "./output/nyc-temperatures.png";
+        const outputImagePath = "./output/nyc-temperatures.pdf";
         return captureReport(urlToCapture, "svg", outputImagePath)
             .then(() => server.close()); // Stop the web server when we are done.
     })
