@@ -13,7 +13,7 @@ function captureWebPage (urlToCapture, captureElementSelector, outputImagePath) 
     console.log("<< " + urlToCapture);
     console.log(">> " + outputImagePath);
 
-    const nightmare = Nightmare(); // Create an Nightmare instance.
+    const nightmare = new Nightmare(); // Create an Nightmare instance.
     return nightmare.goto(urlToCapture) // Point the browser at the requested web page.
         .wait(captureElementSelector) // Wait until the specified HTML element appears on the screen. 
         .screenshot(outputImagePath) // Capture a screenshot to an image file.
