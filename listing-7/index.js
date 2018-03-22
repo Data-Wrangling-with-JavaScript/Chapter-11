@@ -11,609 +11,407 @@ const myData = { // Specify the data for the chart, this is used directly as the
     json: [ // Hard-coded JSON data, just to show you can that you can plug whatever data you want into this chart.
         {
           "Year": 1917,
-          "MinTemp": -25,
-          "MaxTemp": 37.8,
-          "AvgTemp": 10.547245179063365
+          "AvgTemp": 10.54724518
         },
         {
           "Year": 1918,
-          "MinTemp": -21.1,
-          "MaxTemp": 40,
-          "AvgTemp": 11.825205479452052
+          "AvgTemp": 11.82520548
         },
         {
           "Year": 1919,
-          "MinTemp": -18.3,
-          "MaxTemp": 37.2,
-          "AvgTemp": 12.125824175824178
+          "AvgTemp": 12.12582418
         },
         {
           "Year": 1920,
-          "MinTemp": -18.9,
-          "MaxTemp": 34.4,
-          "AvgTemp": 11.286475409836074
+          "AvgTemp": 11.28647541
         },
         {
           "Year": 1921,
-          "MinTemp": -15.6,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.751095890410959
+          "AvgTemp": 12.75109589
         },
         {
           "Year": 1922,
-          "MinTemp": -18.9,
-          "MaxTemp": 34.4,
-          "AvgTemp": 12.001369863013698
+          "AvgTemp": 12.00136986
         },
         {
           "Year": 1923,
-          "MinTemp": -13.9,
-          "MaxTemp": 37.2,
-          "AvgTemp": 11.665753424657524
+          "AvgTemp": 11.66575342
         },
         {
           "Year": 1924,
-          "MinTemp": -15,
-          "MaxTemp": 37.2,
-          "AvgTemp": 11.08784153005464
+          "AvgTemp": 11.08784153
         },
         {
           "Year": 1925,
-          "MinTemp": -18.9,
-          "MaxTemp": 37.2,
-          "AvgTemp": 11.937637362637368
+          "AvgTemp": 11.93763736
         },
         {
           "Year": 1926,
-          "MinTemp": -15,
-          "MaxTemp": 37.8,
-          "AvgTemp": 10.772865013774107
+          "AvgTemp": 10.77286501
         },
         {
           "Year": 1927,
-          "MinTemp": -18.3,
-          "MaxTemp": 33.3,
-          "AvgTemp": 11.932465753424664
+          "AvgTemp": 11.93246575
         },
         {
           "Year": 1928,
-          "MinTemp": -13.9,
-          "MaxTemp": 34.4,
-          "AvgTemp": 11.961157024793385
+          "AvgTemp": 11.96115702
         },
         {
           "Year": 1929,
-          "MinTemp": -13.3,
-          "MaxTemp": 37.2,
-          "AvgTemp": 12.328082191780814
+          "AvgTemp": 12.32808219
         },
         {
           "Year": 1930,
-          "MinTemp": -13.9,
-          "MaxTemp": 38.9,
-          "AvgTemp": 12.53301369863014
+          "AvgTemp": 12.5330137
         },
         {
           "Year": 1931,
-          "MinTemp": -11.7,
-          "MaxTemp": 37.2,
-          "AvgTemp": 13.26561643835617
+          "AvgTemp": 13.26561644
         },
         {
           "Year": 1932,
-          "MinTemp": -11.7,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.900961538461535
+          "AvgTemp": 12.90096154
         },
         {
           "Year": 1933,
-          "MinTemp": -21.1,
-          "MaxTemp": 38.9,
-          "AvgTemp": 12.447099447513821
+          "AvgTemp": 12.44709945
         },
         {
           "Year": 1934,
-          "MinTemp": -26.1,
-          "MaxTemp": 38.3,
-          "AvgTemp": 11.733150684931507
+          "AvgTemp": 11.73315068
         },
         {
           "Year": 1935,
-          "MinTemp": -18.3,
-          "MaxTemp": 35,
-          "AvgTemp": 11.739041095890402
+          "AvgTemp": 11.7390411
         },
         {
           "Year": 1936,
-          "MinTemp": -19.4,
-          "MaxTemp": 41.1,
-          "AvgTemp": 11.940027322404374
+          "AvgTemp": 11.94002732
         },
         {
           "Year": 1937,
-          "MinTemp": -10,
-          "MaxTemp": 37.8,
-          "AvgTemp": 12.546428571428576
+          "AvgTemp": 12.54642857
         },
         {
           "Year": 1938,
-          "MinTemp": -14.4,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.938356164383551
+          "AvgTemp": 12.93835616
         },
         {
           "Year": 1939,
-          "MinTemp": -14.4,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.62821917808219
+          "AvgTemp": 12.62821918
         },
         {
           "Year": 1940,
-          "MinTemp": -13.9,
-          "MaxTemp": 36.7,
-          "AvgTemp": 11.04616438356164
+          "AvgTemp": 11.04616438
         },
         {
           "Year": 1941,
-          "MinTemp": -12.2,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.78082191780821
+          "AvgTemp": 12.78082192
         },
         {
           "Year": 1942,
-          "MinTemp": -20,
-          "MaxTemp": 36.1,
-          "AvgTemp": 12.310714285714294
+          "AvgTemp": 12.31071429
         },
         {
           "Year": 1943,
-          "MinTemp": -22.2,
-          "MaxTemp": 37.2,
-          "AvgTemp": 12.117671232876717
+          "AvgTemp": 12.11767123
         },
         {
           "Year": 1944,
-          "MinTemp": -11.1,
-          "MaxTemp": 38.9,
-          "AvgTemp": 12.637534246575356
+          "AvgTemp": 12.63753425
         },
         {
           "Year": 1945,
-          "MinTemp": -16.7,
-          "MaxTemp": 36.1,
-          "AvgTemp": 12.307808219178066
+          "AvgTemp": 12.30780822
         },
         {
           "Year": 1946,
-          "MinTemp": -15,
-          "MaxTemp": 34.4,
-          "AvgTemp": 13.040273972602742
+          "AvgTemp": 13.04027397
         },
         {
           "Year": 1947,
-          "MinTemp": -13.9,
-          "MaxTemp": 35,
-          "AvgTemp": 12.159041095890403
+          "AvgTemp": 12.1590411
         },
         {
           "Year": 1948,
-          "MinTemp": -17.8,
-          "MaxTemp": 39.4,
-          "AvgTemp": 12.316986301369864
+          "AvgTemp": 12.3169863
         },
         {
           "Year": 1949,
-          "MinTemp": -8.3,
-          "MaxTemp": 38.9,
-          "AvgTemp": 13.88131868131868
+          "AvgTemp": 13.88131868
         },
         {
           "Year": 1950,
-          "MinTemp": -14.4,
-          "MaxTemp": 35,
-          "AvgTemp": 12.076373626373627
+          "AvgTemp": 12.07637363
         },
         {
           "Year": 1951,
-          "MinTemp": -13.3,
-          "MaxTemp": 34.4,
-          "AvgTemp": 12.815479452054786
+          "AvgTemp": 12.81547945
         },
         {
           "Year": 1952,
-          "MinTemp": -13.3,
-          "MaxTemp": 37.8,
-          "AvgTemp": 13.236202185792356
+          "AvgTemp": 13.23620219
         },
         {
           "Year": 1953,
-          "MinTemp": -10,
-          "MaxTemp": 38.9,
-          "AvgTemp": 13.947796143250693
+          "AvgTemp": 13.94779614
         },
         {
           "Year": 1954,
-          "MinTemp": -13.9,
-          "MaxTemp": 37.8,
-          "AvgTemp": 12.737671232876705
+          "AvgTemp": 12.73767123
         },
         {
           "Year": 1955,
-          "MinTemp": -17.8,
-          "MaxTemp": 37.8,
-          "AvgTemp": 12.68255494505495
+          "AvgTemp": 12.68255495
         },
         {
           "Year": 1956,
-          "MinTemp": -10,
-          "MaxTemp": 37.2,
-          "AvgTemp": 11.957240437158474
+          "AvgTemp": 11.95724044
         },
         {
           "Year": 1957,
-          "MinTemp": -17.8,
-          "MaxTemp": 38.3,
-          "AvgTemp": 13.081318681318683
+          "AvgTemp": 13.08131868
         },
         {
           "Year": 1958,
-          "MinTemp": -16.1,
-          "MaxTemp": 33.9,
-          "AvgTemp": 11.46863013698631
+          "AvgTemp": 11.46863014
         },
         {
           "Year": 1959,
-          "MinTemp": -13.9,
-          "MaxTemp": 36.1,
-          "AvgTemp": 13.060273972602742
+          "AvgTemp": 13.06027397
         },
         {
           "Year": 1960,
-          "MinTemp": -13.3,
-          "MaxTemp": 32.8,
-          "AvgTemp": 12.23196721311476
+          "AvgTemp": 12.23196721
         },
         {
           "Year": 1961,
-          "MinTemp": -18.9,
-          "MaxTemp": 36.1,
-          "AvgTemp": 12.839589041095888
+          "AvgTemp": 12.83958904
         },
         {
           "Year": 1962,
-          "MinTemp": -15.6,
-          "MaxTemp": 37.2,
-          "AvgTemp": 11.958630136986303
+          "AvgTemp": 11.95863014
         },
         {
           "Year": 1963,
-          "MinTemp": -18.9,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.046575342465754
+          "AvgTemp": 12.04657534
         },
         {
           "Year": 1964,
-          "MinTemp": -12.8,
-          "MaxTemp": 37.2,
-          "AvgTemp": 12.555191256830605
+          "AvgTemp": 12.55519126
         },
         {
           "Year": 1965,
-          "MinTemp": -12.8,
-          "MaxTemp": 35,
-          "AvgTemp": 12.37712328767122
+          "AvgTemp": 12.37712329
         },
         {
           "Year": 1966,
-          "MinTemp": -13.3,
-          "MaxTemp": 39.4,
-          "AvgTemp": 12.846849315068491
+          "AvgTemp": 12.84684932
         },
         {
           "Year": 1967,
-          "MinTemp": -15.6,
-          "MaxTemp": 35.6,
-          "AvgTemp": 11.705753424657528
+          "AvgTemp": 11.70575342
         },
         {
           "Year": 1968,
-          "MinTemp": -18.3,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.284836065573764
+          "AvgTemp": 12.28483607
         },
         {
           "Year": 1969,
-          "MinTemp": -11.7,
-          "MaxTemp": 36.1,
-          "AvgTemp": 12.702191780821918
+          "AvgTemp": 12.70219178
         },
         {
           "Year": 1970,
-          "MinTemp": -16.1,
-          "MaxTemp": 34.4,
-          "AvgTemp": 12.42027397260274
+          "AvgTemp": 12.42027397
         },
         {
           "Year": 1971,
-          "MinTemp": -15.6,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.939726027397267
+          "AvgTemp": 12.93972603
         },
         {
           "Year": 1972,
-          "MinTemp": -15,
-          "MaxTemp": 34.4,
-          "AvgTemp": 12.172540983606549
+          "AvgTemp": 12.17254098
         },
         {
           "Year": 1973,
-          "MinTemp": -13.9,
-          "MaxTemp": 36.7,
-          "AvgTemp": 13.430821917808212
+          "AvgTemp": 13.43082192
         },
         {
           "Year": 1974,
-          "MinTemp": -14.4,
-          "MaxTemp": 35,
-          "AvgTemp": 12.660684931506855
+          "AvgTemp": 12.66068493
         },
         {
           "Year": 1975,
-          "MinTemp": -9.4,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.790684931506851
+          "AvgTemp": 12.79068493
         },
         {
           "Year": 1976,
-          "MinTemp": -18.3,
-          "MaxTemp": 35.6,
-          "AvgTemp": 11.859699453551904
+          "AvgTemp": 11.85969945
         },
         {
           "Year": 1977,
-          "MinTemp": -18.9,
-          "MaxTemp": 40,
-          "AvgTemp": 12.458356164383554
+          "AvgTemp": 12.45835616
         },
         {
           "Year": 1978,
-          "MinTemp": -12.2,
-          "MaxTemp": 35,
-          "AvgTemp": 11.707123287671221
+          "AvgTemp": 11.70712329
         },
         {
           "Year": 1979,
-          "MinTemp": -17.8,
-          "MaxTemp": 35,
-          "AvgTemp": 13.251780821917801
+          "AvgTemp": 13.25178082
         },
         {
           "Year": 1980,
-          "MinTemp": -18.3,
-          "MaxTemp": 38.9,
-          "AvgTemp": 12.78374316939891
+          "AvgTemp": 12.78374317
         },
         {
           "Year": 1981,
-          "MinTemp": -16.7,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.912876712328769
+          "AvgTemp": 12.91287671
         },
         {
           "Year": 1982,
-          "MinTemp": -17.8,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.749178082191776
+          "AvgTemp": 12.74917808
         },
         {
           "Year": 1983,
-          "MinTemp": -15.6,
-          "MaxTemp": 37.2,
-          "AvgTemp": 13.362191780821927
+          "AvgTemp": 13.36219178
         },
         {
           "Year": 1984,
-          "MinTemp": -13.3,
-          "MaxTemp": 35.6,
-          "AvgTemp": 13.030327868852472
+          "AvgTemp": 13.03032787
         },
         {
           "Year": 1985,
-          "MinTemp": -18.9,
-          "MaxTemp": 35,
-          "AvgTemp": 13.110821917808213
+          "AvgTemp": 13.11082192
         },
         {
           "Year": 1986,
-          "MinTemp": -13.3,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.983287671232878
+          "AvgTemp": 12.98328767
         },
         {
           "Year": 1987,
-          "MinTemp": -15.6,
-          "MaxTemp": 36.1,
-          "AvgTemp": 12.903287671232881
+          "AvgTemp": 12.90328767
         },
         {
           "Year": 1988,
-          "MinTemp": -15,
-          "MaxTemp": 37.2,
-          "AvgTemp": 12.674316939890723
+          "AvgTemp": 12.67431694
         },
         {
           "Year": 1989,
-          "MinTemp": -14.4,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.234657534246589
+          "AvgTemp": 12.23465753
         },
         {
           "Year": 1990,
-          "MinTemp": -13.9,
-          "MaxTemp": 35,
-          "AvgTemp": 14.048219178082192
+          "AvgTemp": 14.04821918
         },
         {
           "Year": 1991,
-          "MinTemp": -12.2,
-          "MaxTemp": 38.9,
-          "AvgTemp": 14.049178082191775
+          "AvgTemp": 14.04917808
         },
         {
           "Year": 1992,
-          "MinTemp": -11.7,
-          "MaxTemp": 33.9,
-          "AvgTemp": 12.195081967213117
+          "AvgTemp": 12.19508197
         },
         {
           "Year": 1993,
-          "MinTemp": -13.9,
-          "MaxTemp": 38.9,
-          "AvgTemp": 13.1131506849315
+          "AvgTemp": 13.11315068
         },
         {
           "Year": 1994,
-          "MinTemp": -18.9,
-          "MaxTemp": 36.7,
-          "AvgTemp": 12.952602739726041
+          "AvgTemp": 12.95260274
         },
         {
           "Year": 1995,
-          "MinTemp": -14.4,
-          "MaxTemp": 38.9,
-          "AvgTemp": 13.01150684931507
+          "AvgTemp": 13.01150685
         },
         {
           "Year": 1996,
-          "MinTemp": -15,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.081420765027325
+          "AvgTemp": 12.08142077
         },
         {
           "Year": 1997,
-          "MinTemp": -15.6,
-          "MaxTemp": 36.1,
-          "AvgTemp": 12.414246575342458
+          "AvgTemp": 12.41424658
         },
         {
           "Year": 1998,
-          "MinTemp": -10,
-          "MaxTemp": 33.9,
-          "AvgTemp": 14.0149315068493
+          "AvgTemp": 14.01493151
         },
         {
           "Year": 1999,
-          "MinTemp": -12.8,
-          "MaxTemp": 38.3,
-          "AvgTemp": 13.639589041095885
+          "AvgTemp": 13.63958904
         },
         {
           "Year": 2000,
-          "MinTemp": -16.1,
-          "MaxTemp": 33.9,
-          "AvgTemp": 12.131420765027318
+          "AvgTemp": 12.13142077
         },
         {
           "Year": 2001,
-          "MinTemp": -8.9,
-          "MaxTemp": 39.4,
-          "AvgTemp": 13.498493150684943
+          "AvgTemp": 13.49849315
         },
         {
           "Year": 2002,
-          "MinTemp": -7.2,
-          "MaxTemp": 36.7,
-          "AvgTemp": 13.599999999999998
+          "AvgTemp": 13.6
         },
         {
           "Year": 2003,
-          "MinTemp": -13.9,
-          "MaxTemp": 34.4,
-          "AvgTemp": 11.953150684931495
+          "AvgTemp": 11.95315068
         },
         {
           "Year": 2004,
-          "MinTemp": -17.2,
-          "MaxTemp": 32.8,
-          "AvgTemp": 12.515846994535524
+          "AvgTemp": 12.51584699
         },
         {
           "Year": 2005,
-          "MinTemp": -15,
-          "MaxTemp": 37.2,
-          "AvgTemp": 13.219863013698642
+          "AvgTemp": 13.21986301
         },
         {
           "Year": 2006,
-          "MinTemp": -9.4,
-          "MaxTemp": 36.1,
-          "AvgTemp": 13.841506849315062
+          "AvgTemp": 13.84150685
         },
         {
           "Year": 2007,
-          "MinTemp": -13.3,
-          "MaxTemp": 33.3,
-          "AvgTemp": 12.878493150684925
+          "AvgTemp": 12.87849315
         },
         {
           "Year": 2008,
-          "MinTemp": -12.2,
-          "MaxTemp": 35.6,
-          "AvgTemp": 12.991803278688527
+          "AvgTemp": 12.99180328
         },
         {
           "Year": 2009,
-          "MinTemp": -14.4,
-          "MaxTemp": 33.3,
-          "AvgTemp": 12.273972602739729
+          "AvgTemp": 12.2739726
         },
         {
           "Year": 2010,
-          "MinTemp": -10.6,
-          "MaxTemp": 39.4,
-          "AvgTemp": 13.783698630136989
+          "AvgTemp": 13.78369863
         },
         {
           "Year": 2011,
-          "MinTemp": -14.4,
-          "MaxTemp": 40,
-          "AvgTemp": 13.620684931506842
+          "AvgTemp": 13.62068493
         },
         {
           "Year": 2012,
-          "MinTemp": -10.6,
-          "MaxTemp": 37.8,
-          "AvgTemp": 14.093579234972683
+          "AvgTemp": 14.09357923
         },
         {
           "Year": 2013,
-          "MinTemp": -11.7,
-          "MaxTemp": 36.7,
-          "AvgTemp": 13.033150684931497
+          "AvgTemp": 13.03315068
         },
         {
           "Year": 2014,
-          "MinTemp": -15.5,
-          "MaxTemp": 33.3,
-          "AvgTemp": 12.514657534246563
+          "AvgTemp": 12.51465753
         },
         {
           "Year": 2015,
-          "MinTemp": -16.6,
-          "MaxTemp": 36.1,
-          "AvgTemp": 13.809726027397259
+          "AvgTemp": 13.80972603
         },
         {
           "Year": 2016,
-          "MinTemp": -18.2,
-          "MaxTemp": 35.6,
-          "AvgTemp": 14.016803278688531
+          "AvgTemp": 14.01680328
         },
         {
           "Year": 2017,
-          "MinTemp": -9.9,
-          "MaxTemp": 34.4,
-          "AvgTemp": 14.783536585365862
+          "AvgTemp": 14.78353659
         }
     ],
     keys: {
@@ -626,7 +424,7 @@ const myData = { // Specify the data for the chart, this is used directly as the
 
 const outputImagePath = "./output/my-output-file.png";
 
-charts.renderLineChart(myData, chartSize, outputImagePath)
+charts.renderLineChart(myData, chartSize, outputImagePath) // Pass in the data and render the chart to the image file.
     .then(() => {
         console.log("Line chart renderered!");
     })

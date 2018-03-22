@@ -7,7 +7,7 @@ function renderChart (bindto, data, size) {
     var chart = c3.generate({
         bindto: bindto,
         size: size,
-        data: data,
+        data: data, // The entire data object is now being passed through from Node.js.
         transition: {
             duration: 0 // Disable animated transitions when we are capturing a static image.
         }
@@ -16,7 +16,7 @@ function renderChart (bindto, data, size) {
 
 $(function () {
 
-    $.get("chart-data")
+    $.get("chart-data") // Now using a new 'chart-data' REST API that provides the entire data object for the chart.
         .then(function (response) {
             renderChart("#chart", response.data, response.chartSize);
         })
