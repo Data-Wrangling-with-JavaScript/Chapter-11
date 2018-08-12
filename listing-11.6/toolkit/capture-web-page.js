@@ -9,7 +9,7 @@ const Nightmare = require('nightmare');
 //
 // Capture the web page specified by URL to the specifed image file.
 //
-function captureWebPage (urlToCapture, captureElementSelector, outputImagePath) {
+function captureWebPage(urlToCapture, captureElementSelector, outputImagePath) {
     console.log("<< " + urlToCapture);
     console.log(">> " + outputImagePath);
 

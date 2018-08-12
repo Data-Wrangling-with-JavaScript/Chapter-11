@@ -18,5 +18,5 @@ function renderLineChart (data, chartSize, outputImagePath) {
 module.exports = {
     renderLineChart: renderLineChart,
 
-    // ... You might want to add other chart types here ...
+    // ... You can add functions for other chart types here ...
 };
